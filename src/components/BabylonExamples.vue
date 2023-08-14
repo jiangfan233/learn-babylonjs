@@ -6,19 +6,19 @@
 </template>
 
 <script lang="ts">
-
 import { defineComponent } from "vue";
 import { StandardMaterials } from "@/BabylonExamples/StandardMaterials";
 import { CustomLoading } from "@/BabylonExamples/Customloading";
 import { PBR } from "@/BabylonExamples/PBR";
-import { BasicScene } from "@/BabylonExamples/BasicScene"
+import { BasicScene } from "@/BabylonExamples/BasicScene";
+import { CameraMachanics } from "@/BabylonExamples/CameraMachanics";
+import { MeshActions } from "@/BabylonExamples/MeshActions";
 
 export default defineComponent({
   name: "BabylonExamples",
   mounted() {
     const canvas = document.querySelector("canvas")!;
-    new CustomLoading(canvas);
-
+    new MeshActions(canvas);
   },
 });
 </script>
